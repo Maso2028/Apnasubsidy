@@ -1,0 +1,58 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #007bff;
+  color: white;
+  padding: 20px;
+}
+
+.folder-grid {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.folder {
+  background: #fff;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.folder:hover {
+  background: #007bff;
+  color: white;
+}
+
+form {
+  margin: 20px auto;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+footer {
+  background: #222;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

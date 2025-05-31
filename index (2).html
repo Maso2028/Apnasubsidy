@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>State Recharge of India</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📱 State Recharge of India</h1>
+    <p>Fast & Secure Mobile Recharge</p>
+  </header>
+  <main>
+    <div class="folder-grid">
+      <div class="folder" onclick="selectOperator('Jio')">Jio</div>
+      <div class="folder" onclick="selectOperator('Airtel')">Airtel</div>
+      <div class="folder" onclick="selectOperator('Vi')">Vi</div>
+      <div class="folder" onclick="selectOperator('BSNL')">BSNL</div>
+    </div>
+    <form id="rechargeForm" onsubmit="submitRecharge(event)">
+      <input type="text" id="number" placeholder="Mobile Number" required />
+      <input type="number" id="amount" placeholder="Amount" required />
+      <input type="hidden" id="operator" />
+      <button type="submit">Recharge Now</button>
+    </form>
+    <div id="result"></div>
+  </main>
+  <footer>
+    <p>Powered by MyRC API | &copy; 2025 State Recharge of India</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
